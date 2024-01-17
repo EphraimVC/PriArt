@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 function menu() {
     return (
         <>
-            <div className="dropdown">
+            <div className="dropdown absolute">
                 <div
                     tabIndex={0}
                     role="button"
@@ -11,10 +11,10 @@ function menu() {
                 >
                     <svg
                         xmlns="http://www.w3.org/2000/svg"
-                        className="h-5 w-5"
+                        className="h-10 w-10"
                         fill="none"
                         viewBox="0 0 24 24"
-                        stroke="currentColor"
+                        stroke="black"
                     >
                         <path
                             strokeLinecap="round"
@@ -26,20 +26,28 @@ function menu() {
                 </div>
                 <ul
                     tabIndex={0}
-                    className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+                    className="menu menu-sm dropdown-content mt-3 z-[1] p-auto shadow bg-base-100 rounded-box w-32"
                 >
-                    <Link to="/">
-                        <a>Home</a>
-                    </Link>
-                    <Link to="/gallery">
-                        <a>Gallery</a>
-                    </Link>
-                    <Link to="/about">
-                        <a>About</a>
-                    </Link>
-                    <Link to="/contact">
-                        <a>Contact</a>
-                    </Link>
+                    <li className="font-bold  pt-2">
+                        <Link className="text-lg" to="/">
+                            Home
+                        </Link>
+                    </li>
+                    <li className="font-bold  pt-2">
+                        <Link className="text-lg" to="/gallery">
+                            Gallery
+                        </Link>
+                    </li>
+                    <li className="font-bold  pt-2">
+                        <Link className="text-lg" to="/about">
+                            About
+                        </Link>
+                    </li>
+                    <li className="font-bold  pt-2 pb-2">
+                        <Link className="text-lg" to="/contact">
+                            Contact
+                        </Link>
+                    </li>
                 </ul>
             </div>
         </>
