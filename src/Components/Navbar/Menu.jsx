@@ -26,7 +26,7 @@ function menu() {
                 </div>
                 <ul
                     tabIndex={0}
-                    className="menu menu-sm dropdown-content mt-3 z-[1] p-auto shadow bg-base-100 rounded-box w-32"
+                    className="menu menu-sm dropdown-content ml-2 mt-3 z-[1] p-auto text-white shadow bg-[#7880B5] rounded-box w-32"
                 >
                     <li className="font-bold  pt-2">
                         <Link className="text-lg" to="/">
@@ -54,3 +54,22 @@ function menu() {
     );
 }
 export default menu;
+
+{
+    /* <div className="dropdown">
+    <div tabIndex={0} role="button" className="btn m-1">
+        Click
+    </div>
+    <ul
+        tabIndex={0}
+        className="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
+    >
+        <li>
+            <a>Item 1</a>
+        </li>
+        <li>
+            <a>Item 2</a>
+        </li>
+    </ul>
+</div>; */
+}

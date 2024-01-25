@@ -1,7 +1,14 @@
 function Footer() {
+    const bgLinear = {
+        background: "  #7880B5 20.66%",
+    };
+
     return (
         <>
-            <footer className="footer footer-center p-10 bg-base-200 text-base-content rounded">
+            <footer
+                style={bgLinear}
+                className="footer footer-center p-10 text-white rounded "
+            >
                 <nav className="grid grid-flow-col gap-4">
                     <a className="link link-hover">About</a>
                     <a className="link link-hover">Contact</a>
@@ -44,7 +51,7 @@ function Footer() {
                     </div>
                 </nav>
                 <aside>
-                    <p>
+                    <p className="text-white">
                         Copyright © 2024 - All right reserved by Priscila Garcia
                     </p>
                 </aside>
