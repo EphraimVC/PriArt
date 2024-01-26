@@ -8,10 +8,10 @@ function ArtExpo() {
                 src={art}
                 alt="art"
             />
-            <p className="pt-10 text-[#354259] mx-3 text-center">
+            <p className="pt-10 text-[#354259] mx-3 text-left text-xl">
                 Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry's standard dummy
-                text ever since the 1500s,
+                industry. Lorem Ipsum has been the standard dummy text ever
+                since the 1500s,
             </p>
             <div className="pt-12">
                 <Btn />
